@@ -1,0 +1,6 @@
+{
+  "name": "Aniversario Hilo Rojo",
+  "description": "Una réplica exacta e interactiva de aniversario celebrando el mito del Hilo Rojo del Destino con poesía, fotos de recuerdos y un punto de convergencia interactivo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

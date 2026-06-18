@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-cursive: "Great Vibes", cursive;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-linen: #FAF2E5;
+  --color-romantic-dark: #3D2E28;
+  --color-romantic-red: #D32F2F;
+  --color-romantic-coral: #E57373;
+}
+
+/* Custom scrollbar and general defaults for a smooth romantic diary feel */
+body {
+  background-color: var(--color-linen);
+  color: var(--color-romantic-dark);
+  font-family: var(--font-serif);
+  overflow-x: hidden;
+}
+
+/* Perfect touch cursor for interactive components */
+button, a {
+  cursor: pointer;
+}
+
+/* Optional custom background texture for linen paper effect */
+.linen-paper {
+  position: relative;
+  background-color: #FAF2E5;
+}
+
+.linen-paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: radial-gradient(#3D2E28 1px, transparent 0), radial-gradient(#3D2E28 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Floating animation for background hearts */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.18;
+  }
+  90% {
+    opacity: 0.18;
+  }
+  100% {
+    transform: translateY(-115vh) scale(1.1) rotate(45deg);
+    opacity: 0;
+  }
+}
+
